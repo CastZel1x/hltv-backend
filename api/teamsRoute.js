@@ -1,5 +1,5 @@
 const express = require('express');
-const HLTV = require("hltv").default;
+const HLTV = require('hltv').default;
 
 const router = express.Router();
 
@@ -24,4 +24,6 @@ teamProperties.forEach(property => {
   });
 });
 
-module.exports = router;
+module.exports = {
+  teamsRoute: router,
+};
